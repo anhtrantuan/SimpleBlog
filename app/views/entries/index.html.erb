@@ -1,0 +1,27 @@
+<h1>Entries</h1>
+
+<table border="1" cellpadding="5px">
+	<tr>
+		<th>Title</th>
+		<th>Content</th>
+		<th>Published</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+
+<% @entries.each do |entry| %>
+	<tr id="<%= dom_id(entry) %>">
+		<td><%= entry.title %></td>
+		<td><%= entry.content %></td>
+		<td><%= entry.published %></td>
+		<td><%= link_to "View", entry %></td>
+		<td><%= link_to "Edit", edit_entry_path(entry) %></td>
+		<td><%= link_to "Delete", entry, method: :delete, data: { confirm: "Are you sure you want to delete this entry?" }, remote: true %></td>
+	</tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "Create", new_entry_path %>

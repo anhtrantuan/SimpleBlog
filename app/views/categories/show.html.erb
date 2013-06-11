@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+	<b>Name:</b>
+	<%= @category.name %>
+</p>
+
+<p>
+	<b>Description:</b>
+	<%= @category.description %>
+</p>
+
+<p>
+	<b>Entries:</b>
+<% unless @category.entries.any? %>
+	<i>None</i>
+<% end %>
+</p>
+
+<ul>
+<% @category.entries.each do |entry| %>
+	<li><%= link_to entry.title, entry %></li>
+<% end %>
+</ul>
+<br />
+
+
+<%= link_to "Edit", edit_category_path(@category) %> |
+<%= link_to "Return", categories_path %>

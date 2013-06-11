@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+	<b>Title:</b>
+	<%= @entry.title %>
+</p>
+
+<p>
+	<b>Content:</b>
+	<%= @entry.content %>
+</p>
+
+<p>
+	<b>Published:</b>
+	<%= @entry.published %>
+</p>
+
+<p>
+	<b>Categories:</b>
+<% unless @entry.categories.any? %>
+	<i>None</i>
+<% end %>
+</p>
+
+<ul>
+<% @entry.categories.each do |category| %>
+	<li><%= link_to category.name, category %></li>
+<% end %>
+</ul>
+<br />
+
+<%= link_to "Edit", edit_entry_path(@entry) %> |
+<%= link_to "Return", entries_path %>
