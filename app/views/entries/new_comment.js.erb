@@ -1,0 +1,4 @@
+var new_comment = $("<li><i><%= @comment.author %></i>, at <i><%= @comment.created_at %></i>: \"<%= @comment.content %>\"</li>");
+new_comment.hide();
+$("#comments").append(new_comment);
+new_comment.fadeIn();

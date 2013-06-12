@@ -10,6 +10,9 @@ class EntriesController < ApplicationController
 
 	def show
 		@entry = Entry.find(params[:id])
+		@categories = @entry.categories
+		@comments = @entry.comments
+		@new_comment = Comment.new
 
 		respond_to do |format|
 			format.html
@@ -17,8 +20,21 @@ class EntriesController < ApplicationController
 		end
 	end
 
+	def new_comment
+		@entry = Entry.find(params[:id])
+		@comment = Comment.new(params[:comment])
+		@entry.comments << @comment
+
+		respond_to do |format|
+			format.html { redirect_to @entry }
+			format.js if @entry.save
+			format.json { head :no_content }
+		end
+	end
+
 	def new
 		@entry = Entry.new
+		@categories = Category.all
 
 		respond_to do |format|
 			format.html
@@ -28,12 +44,11 @@ class EntriesController < ApplicationController
 
 	def edit
 		@entry = Entry.find(params[:id])
+		@categories = Category.all
 	end
 
 	def create
-		parameters = params[:entry]
-		parameters[:published] = DateTime.current
-		@entry = Entry.new(parameters)
+		@entry = Entry.new(params[:entry])
 
 		respond_to do |format|
 			if @entry.save

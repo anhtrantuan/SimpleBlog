@@ -59,7 +59,7 @@ SimpleBlog::Application.routes.draw do
   resources :categories
   
   resources :entries do
-    resources :comments
+    post :new_comment, on: :member
   end
 
   root to: "entries#index"

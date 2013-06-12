@@ -8,7 +8,7 @@ class InitializeDatabase < ActiveRecord::Migration
   	create_table :entries do |t|
   		t.string :title
   		t.text :content
-  		t.datetime :published
+  		t.datetime :published, default: DateTime.current
   	end
 
   	create_table :categorizations do |t|
@@ -20,7 +20,7 @@ class InitializeDatabase < ActiveRecord::Migration
       t.string :author
       t.text :content
       t.integer :entry_id
-      t.datetime :created_at
+      t.datetime :created_at, default: DateTime.current
     end
   end
 
