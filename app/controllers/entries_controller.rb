@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
 	def index
-		@entries = Entry.all
+		@entries = Entry.includes(:comments).all
 
 		respond_to do |format|
 			format.html

@@ -9,7 +9,7 @@ class CategoriesController < ApplicationController
 	end
 
 	def show
-		@category = Category.find(params[:id])
+		@category = Category.includes(:entries).find(params[:id])
 
 		respond_to do |format|
 			format.html

@@ -32659,3 +32659,953 @@ Connecting to database specified by database.yml
   [1m[36m (1.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130611030532')[0m
   [1m[35m (15.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-12 14:04:35 +0700
+Processing by EntriesController#index as HTML
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" [0m
+  Rendered entries/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 58ms (Views: 36.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:04:35 +0700
+Served asset /style.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:35 +0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:04:35 +0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:35 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:35 +0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/entries/new" for 127.0.0.1 at 2013-06-12 14:04:36 +0700
+Processing by EntriesController#new as HTML
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" 
+  Rendered entries/_form.html.erb (6.1ms)
+  Rendered entries/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 25ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:04:36 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:04:36 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:36 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:36 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:36 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2013-06-12 14:04:41 +0700
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  Rendered categories/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:04:41 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:41 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:04:41 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:41 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:41 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2013-06-12 14:04:44 +0700
+Processing by CategoriesController#new as HTML
+  Rendered categories/_form.html.erb (2.9ms)
+  Rendered categories/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 31ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:04:44 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:04:44 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:44 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:44 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:04:44 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2013-06-12 14:04:54 +0700
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e1Fc/isBRnDwTWzMcW9akQKv9oweUH57y9KhvM6iddw=", "category"=>{"name"=>"Category 1", "description"=>"Description 1"}, "commit"=>"Create Category"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = 'Category 1' LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "categories" ("description", "name") VALUES (?, ?)  [["description", "Description 1"], ["name", "Category 1"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/categories/1
+Completed 302 Found in 19ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2013-06-12 14:04:54 +0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `include' for #<Category:0x007f94cefc5520>):
+  app/controllers/categories_controller.rb:12:in `show'
+
+
+  Rendered /Users/anhtran/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/anhtran/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/anhtran/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2013-06-12 14:05:08 +0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 24ms
+
+NoMethodError (undefined method `includes' for #<Category:0x007f94ce88ded8>):
+  app/controllers/categories_controller.rb:12:in `show'
+
+
+  Rendered /Users/anhtran/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/anhtran/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/anhtran/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2013-06-12 14:05:09 +0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `includes' for #<Category:0x007f94cdb06350>):
+  app/controllers/categories_controller.rb:12:in `show'
+
+
+  Rendered /Users/anhtran/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/anhtran/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/anhtran/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2013-06-12 14:05:23 +0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCategorization Load (0.1ms)[0m  SELECT "categorizations".* FROM "categorizations" WHERE "categorizations"."category_id" IN (1)
+  Rendered categories/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 117ms (Views: 8.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:23 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:23 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:23 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:23 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:23 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2013-06-12 14:05:27 +0700
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  Rendered categories/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:27 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:27 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:27 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:27 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:27 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2013-06-12 14:05:28 +0700
+Processing by CategoriesController#new as HTML
+  Rendered categories/_form.html.erb (1.8ms)
+  Rendered categories/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:28 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:28 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:28 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:28 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:28 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2013-06-12 14:05:40 +0700
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e1Fc/isBRnDwTWzMcW9akQKv9oweUH57y9KhvM6iddw=", "category"=>{"name"=>"Category 2", "description"=>"Description 2"}, "commit"=>"Create Category"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = 'Category 2' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("description", "name") VALUES (?, ?)  [["description", "Description 2"], ["name", "Category 2"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/categories/2
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2013-06-12 14:05:40 +0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mCategorization Load (0.1ms)[0m  [1mSELECT "categorizations".* FROM "categorizations" WHERE "categorizations"."category_id" IN (2)[0m
+  Rendered categories/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:40 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:40 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:40 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:40 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:40 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2013-06-12 14:05:42 +0700
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" 
+  Rendered categories/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:42 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:42 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:42 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:42 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:42 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2013-06-12 14:05:43 +0700
+Processing by CategoriesController#new as HTML
+  Rendered categories/_form.html.erb (1.8ms)
+  Rendered categories/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:43 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:43 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:43 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:43 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:43 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2013-06-12 14:05:56 +0700
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e1Fc/isBRnDwTWzMcW9akQKv9oweUH57y9KhvM6iddw=", "category"=>{"name"=>"Category 3", "description"=>"Description 3"}, "commit"=>"Create Category"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCategory Exists (0.2ms)[0m  SELECT 1 AS one FROM "categories" WHERE "categories"."name" = 'Category 3' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("description", "name") VALUES (?, ?)[0m  [["description", "Description 3"], ["name", "Category 3"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/categories/3
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2013-06-12 14:05:56 +0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mCategorization Load (0.1ms)[0m  SELECT "categorizations".* FROM "categorizations" WHERE "categorizations"."category_id" IN (3)
+  Rendered categories/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:56 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:56 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:56 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:56 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:56 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2013-06-12 14:05:57 +0700
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  Rendered categories/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:57 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:05:57 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:57 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:57 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:05:57 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-12 14:06:00 +0700
+Processing by EntriesController#index as HTML
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" 
+  Rendered entries/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:00 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:00 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:00 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:00 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:00 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/entries/new" for 127.0.0.1 at 2013-06-12 14:06:01 +0700
+Processing by EntriesController#new as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" IS NULL AND "categories"."id" = 1 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" IS NULL AND "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" IS NULL AND "categories"."id" = 3 LIMIT 1
+  Rendered entries/_form.html.erb (12.5ms)
+  Rendered entries/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 23ms (Views: 17.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:01 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:01 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:01 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:01 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:01 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/entries" for 127.0.0.1 at 2013-06-12 14:06:18 +0700
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e1Fc/isBRnDwTWzMcW9akQKv9oweUH57y9KhvM6iddw=", "entry"=>{"title"=>"Entry 1", "content"=>"Content 1", "category_ids"=>["", "1", "3"]}, "commit"=>"Create Entry"}
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" IN (1, 3)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mCategory Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "categories" WHERE ("categories"."name" = 'Category 1' AND "categories"."id" != 1) LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" WHERE ("categories"."name" = 'Category 3' AND "categories"."id" != 3) LIMIT 1
+  [1m[36mEntry Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE "entries"."title" = 'Entry 1' LIMIT 1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "entries" ("content", "published", "title") VALUES (?, ?, ?)  [["content", "Content 1"], ["published", Wed, 12 Jun 2013 06:34:07 UTC +00:00], ["title", "Entry 1"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categorizations" ("category_id", "entry_id") VALUES (?, ?)[0m  [["category_id", 1], ["entry_id", 1]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "categorizations" ("category_id", "entry_id") VALUES (?, ?)  [["category_id", 3], ["entry_id", 1]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/entries/1
+Completed 302 Found in 45ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/entries/1" for 127.0.0.1 at 2013-06-12 14:06:18 +0700
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."entry_id" = 1[0m
+  Rendered entries/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 21ms (Views: 11.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:18 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:18 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:18 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:18 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:18 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/entries/1/new_comment" for 127.0.0.1 at 2013-06-12 14:06:29 +0700
+Processing by EntriesController#new_comment as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e1Fc/isBRnDwTWzMcW9akQKv9oweUH57y9KhvM6iddw=", "comment"=>{"author"=>"Author 1", "content"=>"Comment 1"}, "commit"=>"Create Comment", "id"=>"1"}
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("author", "content", "created_at", "entry_id") VALUES (?, ?, ?, ?)  [["author", "Author 1"], ["content", "Comment 1"], ["created_at", Wed, 12 Jun 2013 06:34:07 UTC +00:00], ["entry_id", 1]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEntry Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Entry 1' AND "entries"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  Rendered entries/new_comment.js.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 1.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-12 14:06:30 +0700
+Processing by EntriesController#index as HTML
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" [0m
+  Rendered entries/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:30 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:30 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:30 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:30 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:30 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/entries/new" for 127.0.0.1 at 2013-06-12 14:06:32 +0700
+Processing by EntriesController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" 
+  [1m[36mCategory Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" IS NULL AND "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" IS NULL AND "categories"."id" = 2 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" IS NULL AND "categories"."id" = 3 LIMIT 1[0m
+  Rendered entries/_form.html.erb (5.4ms)
+  Rendered entries/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:32 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:32 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:32 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:32 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:32 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/entries" for 127.0.0.1 at 2013-06-12 14:06:40 +0700
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e1Fc/isBRnDwTWzMcW9akQKv9oweUH57y9KhvM6iddw=", "entry"=>{"title"=>"Entry 2", "content"=>"Content 2", "category_ids"=>["", "1", "2", "3"]}, "commit"=>"Create Entry"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" IN (1, 2, 3)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" WHERE ("categories"."name" = 'Category 1' AND "categories"."id" != 1) LIMIT 1
+  [1m[36mCategory Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "categories" WHERE ("categories"."name" = 'Category 2' AND "categories"."id" != 2) LIMIT 1[0m
+  [1m[35mCategory Exists (0.0ms)[0m  SELECT 1 AS one FROM "categories" WHERE ("categories"."name" = 'Category 3' AND "categories"."id" != 3) LIMIT 1
+  [1m[36mEntry Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE "entries"."title" = 'Entry 2' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("content", "published", "title") VALUES (?, ?, ?)  [["content", "Content 2"], ["published", Wed, 12 Jun 2013 06:34:07 UTC +00:00], ["title", "Entry 2"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categorizations" ("category_id", "entry_id") VALUES (?, ?)[0m  [["category_id", 1], ["entry_id", 2]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "categorizations" ("category_id", "entry_id") VALUES (?, ?)  [["category_id", 2], ["entry_id", 2]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "categorizations" ("category_id", "entry_id") VALUES (?, ?)[0m  [["category_id", 3], ["entry_id", 2]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/entries/2
+Completed 302 Found in 9ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/entries/2" for 127.0.0.1 at 2013-06-12 14:06:40 +0700
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 2
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."entry_id" = 2
+  Rendered entries/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:40 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:40 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:40 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:41 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:41 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/entries/2/new_comment" for 127.0.0.1 at 2013-06-12 14:06:50 +0700
+Processing by EntriesController#new_comment as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e1Fc/isBRnDwTWzMcW9akQKv9oweUH57y9KhvM6iddw=", "comment"=>{"author"=>"Author 3", "content"=>"Comment 3"}, "commit"=>"Create Comment", "id"=>"2"}
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("author", "content", "created_at", "entry_id") VALUES (?, ?, ?, ?)[0m  [["author", "Author 3"], ["content", "Comment 3"], ["created_at", Wed, 12 Jun 2013 06:34:07 UTC +00:00], ["entry_id", 2]]
+  [1m[35m (5.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Entry 2' AND "entries"."id" != 2) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  Rendered entries/new_comment.js.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 1.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-12 14:06:51 +0700
+Processing by EntriesController#index as HTML
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" 
+  Rendered entries/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:51 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:51 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:51 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:51 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:51 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/entries/new" for 127.0.0.1 at 2013-06-12 14:06:52 +0700
+Processing by EntriesController#new as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  [1m[35mCategory Exists (0.2ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" IS NULL AND "categories"."id" = 1 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" IS NULL AND "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" IS NULL AND "categories"."id" = 3 LIMIT 1
+  Rendered entries/_form.html.erb (6.8ms)
+  Rendered entries/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:52 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:52 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:52 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:52 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:52 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started POST "/entries" for 127.0.0.1 at 2013-06-12 14:06:58 +0700
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e1Fc/isBRnDwTWzMcW9akQKv9oweUH57y9KhvM6iddw=", "entry"=>{"title"=>"Entry 3", "content"=>"Content 3", "category_ids"=>["", "2"]}, "commit"=>"Create Entry"}
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" WHERE ("categories"."name" = 'Category 2' AND "categories"."id" != 2) LIMIT 1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE "entries"."title" = 'Entry 3' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("content", "published", "title") VALUES (?, ?, ?)[0m  [["content", "Content 3"], ["published", Wed, 12 Jun 2013 06:34:07 UTC +00:00], ["title", "Entry 3"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categorizations" ("category_id", "entry_id") VALUES (?, ?)  [["category_id", 2], ["entry_id", 3]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/entries/3
+Completed 302 Found in 33ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/entries/3" for 127.0.0.1 at 2013-06-12 14:06:58 +0700
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 3[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."entry_id" = 3[0m
+  Rendered entries/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:58 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:06:58 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:58 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:59 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:06:59 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/entries/3/new_comment" for 127.0.0.1 at 2013-06-12 14:07:05 +0700
+Processing by EntriesController#new_comment as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e1Fc/isBRnDwTWzMcW9akQKv9oweUH57y9KhvM6iddw=", "comment"=>{"author"=>"Author 2", "content"=>"Comment 2"}, "commit"=>"Create Comment", "id"=>"3"}
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("author", "content", "created_at", "entry_id") VALUES (?, ?, ?, ?)  [["author", "Author 2"], ["content", "Comment 2"], ["created_at", Wed, 12 Jun 2013 06:34:07 UTC +00:00], ["entry_id", 3]]
+  [1m[36m (5.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mEntry Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Entry 3' AND "entries"."id" != 3) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  Rendered entries/new_comment.js.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 1.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-12 14:07:06 +0700
+Processing by EntriesController#index as HTML
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" [0m
+  Rendered entries/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:06 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:06 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:06 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:06 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:06 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/entries/1" for 127.0.0.1 at 2013-06-12 14:07:08 +0700
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."entry_id" = 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."entry_id" = 1
+  Rendered entries/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:08 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:08 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:08 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:08 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:08 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2013-06-12 14:07:10 +0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCategorization Load (0.2ms)[0m  SELECT "categorizations".* FROM "categorizations" WHERE "categorizations"."category_id" IN (1)
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."id" IN (1, 2)[0m
+  Rendered categories/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 55ms (Views: 6.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:10 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:10 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:10 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:10 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:10 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2013-06-12 14:07:37 +0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCategorization Load (0.1ms)[0m  [1mSELECT "categorizations".* FROM "categorizations" WHERE "categorizations"."category_id" IN (1)[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."id" IN (1, 2)
+  Rendered categories/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 58ms (Views: 7.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:37 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:37 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:37 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:37 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:37 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/entries/1" for 127.0.0.1 at 2013-06-12 14:07:38 +0700
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."entry_id" = 1
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."entry_id" = 1[0m
+  Rendered entries/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 24ms (Views: 13.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:38 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:38 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:38 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:38 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:38 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/entries/1" for 127.0.0.1 at 2013-06-12 14:07:40 +0700
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categorizations" ON "categories"."id" = "categorizations"."category_id" WHERE "categorizations"."entry_id" = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."entry_id" = 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."entry_id" = 1
+  Rendered entries/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:40 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-06-12 14:07:40 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:40 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:40 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-12 14:07:40 +0700
+Served asset /application.js - 304 Not Modified (0ms)
