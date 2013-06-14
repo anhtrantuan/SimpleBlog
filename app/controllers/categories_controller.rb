@@ -1,4 +1,6 @@
 class CategoriesController < ApplicationController
+	before_filter :authorize, only: [:new, :create, :edit, :update, :destroy]
+
 	def index
 		@categories = Category.all
 

@@ -22,6 +22,11 @@ class InitializeDatabase < ActiveRecord::Migration
       t.integer :entry_id
       t.datetime :created_at, default: DateTime.current
     end
+
+    create_table :users do |t|
+      t.string :email
+      t.string :password_digest
+    end
   end
 
   def down

@@ -1,4 +1,6 @@
 class EntriesController < ApplicationController
+	before_filter :authorize, only: [:new, :create, :edit, :update, :destroy]
+	
 	def index
 		@entries = Entry.includes(:comments).all
 

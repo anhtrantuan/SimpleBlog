@@ -27,13 +27,18 @@ ActiveRecord::Schema.define(:version => 20130611030532) do
     t.string   "author"
     t.text     "content"
     t.integer  "entry_id"
-    t.datetime "created_at", :default => '2013-06-12 06:34:07'
+    t.datetime "created_at", :default => '2013-06-14 03:51:45'
   end
 
   create_table "entries", :force => true do |t|
     t.string   "title"
     t.text     "content"
-    t.datetime "published", :default => '2013-06-12 06:34:07'
+    t.datetime "published", :default => '2013-06-14 03:51:45'
+  end
+
+  create_table "users", :force => true do |t|
+    t.string "email"
+    t.string "password_digest"
   end
 
 end

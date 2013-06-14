@@ -63,5 +63,12 @@ SimpleBlog::Application.routes.draw do
     post :new_comment, on: :member
   end
 
+  resources :users
+  resources :sessions
+
+  get "signup", to: "users#new", as: "signup"
+  get "login", to: "sessions#new", as: "login"
+  get "logout", to: "sessions#destroy", as: "logout"
+
   root to: "entries#index"
 end
