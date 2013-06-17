@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+	<b>Title:</b>
+	<%= @entry.title %>
+</p>
+
+<p>
+	<b>Content:</b>
+	<%= @entry.content %>
+</p>
+
+<p>
+	<b>Published:</b>
+	<%= @entry.published %>
+</p>
+
+<p>
+	<b>Categories:</b>
+<% unless @categories.any? %>
+	<i>None</i>
+<% end %>
+</p>
+
+<ul>
+<% @categories.each do |category| %>
+	<li><%= link_to category.name, category %></li>
+<% end %>
+</ul>
+
+<p>
+	<b>Comments:</b>
+<% unless @comments.any? %>
+	<i>None</i>
+<% end %>
+</p>
+
+<ul id="comments">
+<% @comments.each do |comment| %>
+	<li>
+		<i><%= comment.author %></i>, at <i><%= comment.created_at %></i>:
+		"<%= comment.content %>"
+	</li>
+<% end %>
+</ul>
+
+<p>
+	<b>New Comment:</b>
+</p>
+<%= form_for @new_comment, url: new_comment_entry_path(@entry), remote: true do |f| %>
+	<div class="field">
+		<%= f.label :author %><br />
+		<%= f.text_field :author %>
+	</div>
+	<div class="field">
+		<%= f.label :content %><br />
+		<%= f.text_area :content %>
+	</div>
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+<% end %>
+<br />
+
+<%= link_to "Edit", edit_entry_path(@entry) %> |
+<%= link_to "Return", root_path %>
