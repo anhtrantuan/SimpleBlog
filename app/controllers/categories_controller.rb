@@ -3,10 +3,11 @@ class CategoriesController < ApplicationController
 
 	def index
 		@categories = Category.all
+		@category_ids = Category.pluck(:id)
 
 		respond_to do |format|
 			format.html
-			format.json { render json: @ecategories }
+			format.json { render json: @category_ids }
 		end
 	end
 
@@ -37,7 +38,7 @@ class CategoriesController < ApplicationController
 
 		respond_to do |format|
 			if @category.save
-				format.html { redirect_to @category, notice: "New category was successfully created!" }
+				format.html { redirect_to category_url(@category.id), notice: "New category was successfully created!" }
 				format.json { render json: @category, status: :created, location: @entry }
 			else
 				format.html { render action: "new" }
@@ -51,7 +52,7 @@ class CategoriesController < ApplicationController
 
 		respond_to do |format|
 			if @category.update_attributes(params[:category])
-				format.html { redirect_to @category, notice: "Category was successfully updated!" }
+				format.html { redirect_to category_url(@category.id), notice: "Category was successfully updated!" }
 				format.json { head :no_content }
 			else
 				format.html { render action: "edit" }

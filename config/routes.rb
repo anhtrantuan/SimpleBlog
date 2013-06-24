@@ -1,4 +1,21 @@
 SimpleBlog::Application.routes.draw do
+  resources :categories do
+    resources :entries, only: [:index]
+  end
+  
+  resources :entries do
+    resources :comments, only: [:index, :show, :create]
+  end
+
+  resources :users, only: [:new, :create]
+  resources :sessions, only: [:new, :create, :destroy]
+
+  get "signup", to: "users#new", as: "signup"
+  get "login", to: "sessions#new", as: "login"
+  get "logout", to: "sessions#destroy", as: "logout"
+
+  root to: "entries#index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -55,20 +72,4 @@ SimpleBlog::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-
-  resources :categories
-  
-  resources :entries do
-    resources :comments, only: [:index, :show]
-    post :new_comment, on: :member
-  end
-
-  resources :users
-  resources :sessions
-
-  get "signup", to: "users#new", as: "signup"
-  get "login", to: "sessions#new", as: "login"
-  get "logout", to: "sessions#destroy", as: "logout"
-
-  root to: "entries#index"
 end

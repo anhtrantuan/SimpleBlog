@@ -12,7 +12,12 @@
 
 <p>
 	<b>Published:</b>
-	<%= @entry.published %>
+	<%= @entry.created_at %>
+</p>
+
+<p>
+	<b>Last modified:</b>
+	<%= @entry.updated_at %>
 </p>
 
 <p>
@@ -47,7 +52,7 @@
 <p>
 	<b>New Comment:</b>
 </p>
-<%= form_for @new_comment, url: new_comment_entry_path(@entry), remote: true do |f| %>
+<%= form_for @new_comment, url: entry_comments_path(@entry), remote: true do |f| %>
 	<div class="field">
 		<%= f.label :author %><br />
 		<%= f.text_field :author %>

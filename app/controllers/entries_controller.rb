@@ -3,10 +3,17 @@ class EntriesController < ApplicationController
 	
 	def index
 		@entries = Entry.includes(:comments).all
+		
+		if params[:category_id]
+			@category = Category.find(params[:category_id])
+			@entry_ids = @category.entries.collect { |entry| entry.id }
+		else
+			@entry_ids = Entry.pluck(:id)
+		end
 
 		respond_to do |format|
-			format.html
-			format.json { render json: @entries }
+			format.html { redirect_to categories_url if params[:category_id] }
+			format.json { render json: @entry_ids }
 		end
 	end
 
@@ -19,18 +26,6 @@ class EntriesController < ApplicationController
 		respond_to do |format|
 			format.html
 			format.json { render json: @entry }
-		end
-	end
-
-	def new_comment
-		@entry = Entry.find(params[:id])
-		@comment = Comment.new(params[:comment])
-		@entry.comments << @comment
-
-		respond_to do |format|
-			format.html { redirect_to @entry }
-			format.js if @entry.save
-			format.json { head :no_content }
 		end
 	end
 
@@ -54,7 +49,7 @@ class EntriesController < ApplicationController
 
 		respond_to do |format|
 			if @entry.save
-				format.html { redirect_to @entry, notice: "New entry was successfully created!" }
+				format.html { redirect_to entry_url(@entry.id), notice: "New entry was successfully created!" }
 				format.json { render json: @entry, status: :created, location: @entry }
 			else
 				format.html { render action: "new" }
@@ -68,7 +63,7 @@ class EntriesController < ApplicationController
 
 		respond_to do |format|
 			if @entry.update_attributes(params[:entry])
-				format.html { redirect_to @entry, notice: "Entry was successfully updated!" }
+				format.html { redirect_to entry_url(@entry.id), notice: "Entry was successfully updated!" }
 				format.json { head :no_content }
 			else
 				format.html { render action: "edit" }
