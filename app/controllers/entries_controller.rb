@@ -63,6 +63,7 @@ class EntriesController < ApplicationController
 
 		respond_to do |format|
 			if @entry.update_attributes(params[:entry])
+				@entry.update_attribute(:updated_at, Time.now)
 				format.html { redirect_to entry_url(@entry.id), notice: "Entry was successfully updated!" }
 				format.json { head :no_content }
 			else
