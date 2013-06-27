@@ -4,7 +4,7 @@ module Api
 			respond_to :json
 
 			def index
-				categories = Category.pluck(:id)
+				categories = Category.order(:name).pluck(:id)
 		
 				page_size = if params[:page_size]
 					params[:page_size].to_i

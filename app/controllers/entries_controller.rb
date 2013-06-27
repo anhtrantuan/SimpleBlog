@@ -25,19 +25,19 @@ class EntriesController < ApplicationController
 
 	def show
 		@entry = Entry.find_by_id(params[:id])
-		@categories = @entry.categories
-		@comments = @entry.comments
+		@categories = @entry.categories.order(:name)
+		@comments = @entry.comments.order(:created_at)
 		@new_comment = Comment.new
 	end
 
 	def new
 		@entry = Entry.new
-		@categories = Category.all
+		@categories = Category.order(:name).all
 	end
 
 	def edit
 		@entry = Entry.find_by_id(params[:id])
-		@categories = Category.all
+		@categories = Category.order(:name).all
 	end
 
 	def create

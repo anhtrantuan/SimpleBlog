@@ -4,9 +4,9 @@ class CategoriesController < ApplicationController
 	def index
 		if params[:entry_id]
 			entry = Entry.find_by_id(params[:entry_id])
-			categories = entry.categories
+			categories = entry.categories.order(:name)
 		else
-			categories = Category.all
+			categories = Category.order(:name).all
 		end
 		
 		page_size = if params[:page_size]
