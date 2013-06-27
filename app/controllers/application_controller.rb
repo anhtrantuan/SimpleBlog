@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  PAGE_SIZE = 2
+  PAGE_SIZE = 20
 
   private
 
