@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  PAGE_SIZE = 2
+
   private
 
   def current_user

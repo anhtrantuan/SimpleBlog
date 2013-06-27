@@ -7,5 +7,7 @@ class CreateCommentsTable < ActiveRecord::Migration
 
   		t.timestamps
   	end
+
+  	add_index :comments, :entry_id
   end
 end

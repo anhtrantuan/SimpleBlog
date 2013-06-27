@@ -1,74 +1,64 @@
 class CategoriesController < ApplicationController
-	before_filter :authorize, only: [:new, :create, :edit, :update, :destroy]
+	before_filter :authorize, except: [:index, :show]
 
 	def index
-		@categories = Category.all
-		@category_ids = Category.pluck(:id)
-
-		respond_to do |format|
-			format.html
-			format.json { render json: @category_ids }
+		if params[:entry_id]
+			entry = Entry.find_by_id(params[:entry_id])
+			categories = entry.categories
+		else
+			categories = Category.all
 		end
+		
+		page_size = if params[:page_size]
+			params[:page_size].to_i
+		else
+			PAGE_SIZE
+		end
+		page = if params[:page]
+			params[:page].to_i - 1
+		else
+			0
+		end
+
+		@categories = categories[page * page_size, page_size]
 	end
 
 	def show
-		@category = Category.includes(:entries).find(params[:id])
-
-		respond_to do |format|
-			format.html
-			format.json { render json: @category }
-		end
+		@category = Category.find(params[:id])
 	end
 
 	def new
 		@category = Category.new
-
-		respond_to do |format|
-			format.html
-			format.json { render json: @category }
-		end
 	end
 
 	def edit
-		@category = Category.find(params[:id])
+		@category = Category.find_by_id(params[:id])
 	end
 
 	def create
 		@category = Category.new(params[:category])
 
-		respond_to do |format|
-			if @category.save
-				format.html { redirect_to category_url(@category.id), notice: "New category was successfully created!" }
-				format.json { render json: @category, status: :created, location: @entry }
-			else
-				format.html { render action: "new" }
-				format.json { render json: @category.errors, status: :unprocessable_entity }
-			end
+		if @category.save
+			redirect_to category_url(@category.id), notice: "New category was successfully created!"
+		else
+			render action: "new"
 		end
 	end
 
 	def update
-		@category = Category.find(params[:id])
+		@category = Category.find_by_id(params[:id])
 
-		respond_to do |format|
-			if @category.update_attributes(params[:category])
-				format.html { redirect_to category_url(@category.id), notice: "Category was successfully updated!" }
-				format.json { head :no_content }
-			else
-				format.html { render action: "edit" }
-				format.json { render json: @category.errors, status: :unprocessable_entity }
-			end
+		if @category.update_attributes(params[:category])
+			redirect_to category_url(@category.id), notice: "Category was successfully updated!"
+		else
+			render action: "edit"
 		end
 	end
 
 	def destroy
-		@category = Category.find(params[:id])
+		@category = Category.find_by_id(params[:id])
 		@category.destroy
 
-		respond_to do |format|
-			format.html { redirect_to categories_url }
-			format.json { head :no_content }
-			format.js
-		end
+		respond_to :js
 	end
 end

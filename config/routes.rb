@@ -1,20 +1,33 @@
+require 'api_constraints'
+
 SimpleBlog::Application.routes.draw do
-  resources :categories do
-    resources :entries, only: [:index]
+  namespace :api, defaults: { format: 'json' } do
+    scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
+      resources :categories
+
+      resources :entries do
+        resources :comments, only: [:index, :show, :create]
+      end
+    end
   end
+
+  resources :categories
   
   resources :entries do
     resources :comments, only: [:index, :show, :create]
   end
 
+  get '/categories/:category_id/entries' => 'entries#index'
+  get '/entries/:entry_id/categories' => 'categories#index'
+
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]
 
-  get "signup", to: "users#new", as: "signup"
-  get "login", to: "sessions#new", as: "login"
-  get "logout", to: "sessions#destroy", as: "logout"
+  get 'signup', to: 'users#new', as: 'signup'
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
 
-  root to: "entries#index"
+  root to: 'entries#index'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
